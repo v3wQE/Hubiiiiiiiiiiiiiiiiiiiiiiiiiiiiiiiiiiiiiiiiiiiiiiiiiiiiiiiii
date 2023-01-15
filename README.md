@@ -108,6 +108,11 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/tenaaki/GenericAimbot
 
 end)
 
+Section:NewButton("Smooth camlock", "Very OP Enjoin:)", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/v3wQE/AimlockV4/main/README.md"))();
+
+end)
+
 Section:NewButton("Balant", "Enjoin My Script:)", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/v3wQE/Balant-locking/main/README.md"))();
 
