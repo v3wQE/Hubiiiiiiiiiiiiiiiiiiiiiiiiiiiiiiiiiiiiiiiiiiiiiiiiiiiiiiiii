@@ -37,7 +37,14 @@ Section:NewButton("TarGet", "Enjoin My Script:)", function()
 end)
 
 Section:NewButton("Antistomp", "Enjoin My Script:)", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/v3wQE/flying/main/README.md"))();
+            local Loop
+        local loopFunction = function()
+            if player.Character.BodyEffects['K.O'].Value == true then player.Character:Destroy() end
+        end;
+        local Start = function()
+            Loop = game:GetService("RunService").Heartbeat:Connect(loopFunction);
+        end; 
+    end
 end)
 
 Section:NewButton("Antibag", "Enjoin My Script:)", function()
