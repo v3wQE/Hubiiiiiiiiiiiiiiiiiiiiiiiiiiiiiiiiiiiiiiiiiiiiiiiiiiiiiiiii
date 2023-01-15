@@ -174,7 +174,7 @@ local Tab = Window:NewTab("Speed")
 local Section = Tab:NewSection("Speed")
 Section:NewButton("Cframe", "Very OP Enjoin:)", function()
           local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Speed", "DarkTheme")
+local Window = Library.CreateLib("Speed", "Sentinel")
 
 local speed = Window:NewTab("Speed")
 local rs = speed:NewSection("CFrame Speed")
