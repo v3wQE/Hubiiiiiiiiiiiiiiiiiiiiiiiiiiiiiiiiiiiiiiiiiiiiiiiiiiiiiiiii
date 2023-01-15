@@ -12,7 +12,7 @@ local NotificationBindable = Instance.new("BindableFunction")
 NotificationBindable.OnInvoke = callback
 --
 game.StarterGui:SetCore("SendNotification",  {
- Title = "Made By v3w#9205";
+ Title = "Credit v3w#9205";
  Text = "I Hope You Enjoin :)";
  Icon = "";
  Duration = 5;
@@ -36,15 +36,16 @@ Section:NewButton("TarGet", "Enjoin My Script:)", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/GS21Official/DH-VictimMenu-Script/main/Dh%20VictimMenu%3A%20Script"))()
 end)
 
-Section:NewButton("Antistomp", "Enjoin My Script:)", function()
-            local Loop
-        local loopFunction = function()
-            if player.Character.BodyEffects['K.O'].Value == true then player.Character:Destroy() end
-        end;
-        local Start = function()
-            Loop = game:GetService("RunService").Heartbeat:Connect(loopFunction);
-        end; 
+Section:NewButton("Antistomp(NotWork)", "Enjoin My Script:)", function()
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(KeyPressed)
+ if KeyPressed == "k" then
+    for L_170_forvar0, L_171_forvar1 in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+        if L_171_forvar1:IsA("BasePart") then
+            L_171_forvar1:Destroy()
+        end
     end
+    end
+end)
 end)
 
 Section:NewButton("Antibag", "Enjoin My Script:)", function()
@@ -102,8 +103,8 @@ Delay.Position:Destroy()
 Delay.Position = 0
 end)
 
-local Tab = Window:NewTab("Fun")
-local Section = Tab:NewSection("Fun")
+local Tab = Window:NewTab("Avatar")
+local Section = Tab:NewSection("Avatar")
 Section:NewButton("Headless", "Enjoin My Script:)", function()
     game.Players.LocalPlayer.Character.Head.Transparency = 1
 game.Players.LocalPlayer.Character.Head.Transparency = 1
@@ -259,8 +260,8 @@ Section:NewButton("Rejoin", "Very OP Enjoin:)", function()
           loadstring(game:HttpGet("https://raw.githubusercontent.com/v3wQE/En/main/README.md"))();
 end)
 
-local Tab = Window:NewTab("Toggle")
-local Section = Tab:NewSection("Toggle")
-Section:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.V, function()
+local Tab = Window:NewTab("UiToggle")
+local Section = Tab:NewSection("UiToggle")
+Section:NewKeybind("UiToggle", "UiToggle", Enum.KeyCode.V, function()
 	Library:ToggleUI()
 end)
