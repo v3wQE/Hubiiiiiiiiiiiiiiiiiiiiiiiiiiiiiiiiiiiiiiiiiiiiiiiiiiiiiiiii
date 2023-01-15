@@ -36,16 +36,8 @@ Section:NewButton("TarGet", "Enjoin My Script:)", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/GS21Official/DH-VictimMenu-Script/main/Dh%20VictimMenu%3A%20Script"))()
 end)
 
-Section:NewButton("Antistomp(NotWork)", "Enjoin My Script:)", function()
-game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(KeyPressed)
- if KeyPressed == "k" then
-    for L_170_forvar0, L_171_forvar1 in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
-        if L_171_forvar1:IsA("BasePart") then
-            L_171_forvar1:Destroy()
-        end
-    end
-    end
-end)
+Section:NewButton("Antistomp", "Enjoin My Script:)", function()
+pcall(function() if tostring(game.PlaceId) == "2788229376" then local corepackages = game:GetService"CorePackages" local localplayer = game:GetService"Players".LocalPlayer local run = game:GetService"RunService" run:BindToRenderStep("rrrrrrrrrrr",2000,function() pcall(function() if localplayer.Character.Humanoid.Health <= 30 then localplayer.Character.Humanoid:UnequipTools() localplayer.Character.Humanoid:Destroy() workspace.CurrentCamera.CameraSubject = localplayer.Character wait() local prt = Instance.new("Model", corepackages); Instance.new("Part", prt).Name="Torso"; Instance.new("Part", prt).Name="Head"; Instance.new("Humanoid", prt).Name="Humanoid"; localplayer.Character=prt end end) pcall(function() if localplayer.Character.Humanoid.FloorMaterial == "Plastic" then ReplicatedStorage:FireServer("Stomp") end end) end) loadstring(game:HttpGet("https://pastebin.com/raw/MQ3wc7Zq", true))() end end)
 end)
 
 Section:NewButton("Antibag", "Enjoin My Script:)", function()
@@ -65,6 +57,33 @@ Section:NewButton("Antibag", "Enjoin My Script:)", function()
         end)
 end)
 
+local Tab = Window:NewTab("Reach")
+local Section = Tab:NewSection("Reach")
+
+Section:NewButton("BatReach", "Enjoin My Script:)", function()
+
+    game.Players.LocalPlayer.Backpack["[Bat]"].Handle.Size = Vector3.new(100, 100, 100)    
+end)
+
+Section:NewButton("knifeReach", "Enjoin My Script:)", function()
+
+    game.Players.LocalPlayer.Backpack["[Knife]"].Handle.Size = Vector3.new(50, 50, 50)
+end)
+
+Section:NewButton("StopSignReach", "Enjoin My Script:)", function()    
+
+    game.Players.LocalPlayer.Backpack["[StopSign]"].Handle.Size = Vector3.new(100, 100, 100)    
+end)
+
+Section:NewButton("ShovelReach", "Enjoin My Script:)", function()
+
+    game.Players.LocalPlayer.Backpack["[Shovel]"].Handle.Size = Vector3.new(100, 100, 100)    
+end)
+
+Section:NewButton("HammerReach", "Enjoin My Script:)", function()
+
+game.Players.LocalPlayer.Backpack["[SledgeHammer]"].Handle.Size = Vector3.new(50, 50, 50)
+end)
 
 local Tab = Window:NewTab("Aimlock")
 local Section = Tab:NewSection("Aimlock")
