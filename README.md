@@ -174,13 +174,6 @@ Section:NewButton("HeadlessAndKorblox", "Enjoin My Script:)", function()
     L_401_.Transparency = 1
 end)
 
-
-local Tab = Window:NewTab("Speed")
-local Section = Tab:NewSection("Speed")
-Section:NewButton("Cframe", "Very OP Enjoin:)", function()
-          local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Speed", "Sentinel")
-
 local speed = Window:NewTab("Speed")
 local rs = speed:NewSection("CFrame Speed")
 rs:NewButton("CFrame Guns FIX", "ButtonInfo", function()
@@ -203,7 +196,7 @@ rs:NewButton("CFrame Guns FIX", "ButtonInfo", function()
         end)
     end)
 end)
-rs:NewButton("CFrame Speed (N)", "ButtonInfo", function()
+rs:NewButton("CFrame Speed (Z)", "ButtonInfo", function()
         repeat
         wait()
     until game:IsLoaded()
@@ -238,7 +231,7 @@ rs:NewButton("CFrame Speed (N)", "ButtonInfo", function()
                 print(Multiplier)
             end
         end
-        if L_140_arg0.KeyCode == Enum.KeyCode.N then
+        if L_140_arg0.KeyCode == Enum.KeyCode.Z then
             L_138_ = not L_138_
             if L_138_ == true then
                 repeat
@@ -251,10 +244,6 @@ rs:NewButton("CFrame Speed (N)", "ButtonInfo", function()
 end)
 rs:NewSlider("CFrame Speed ", "SliderInfo", 5, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
     getgenv().Multiplier = s
-end)
-rs:NewKeybind("Toggle UI", "KeybindInfo", Enum.KeyCode.RightControl, function()
-    Library.ToggleUI()
-end)
 end)
 
 local Tab = Window:NewTab("Godmode")
